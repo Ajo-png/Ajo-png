@@ -27,6 +27,9 @@ My focus rests on open-source tooling, backend architecture, and data-pipeline c
 
 ## Selected Operations
 
+### Collections Strategy Automation - Macropay *(2025)*
+Monitored KPIs across a customer-service center via CCC and Power BI. Automated critical back-office processes with Python, measurably reducing execution time. Managed data ingestion from Amazon S3 and refined collections strategy through Excel pivot-table analysis.
+
 ### IMU Motion Analysis - Canine Movement Classification *(2025)*
 Applied sensor-calibration algorithms to improve data-extraction precision by 20 %. Deployed the Madgwick filter for orientation estimation and classified activity states via Random Forest, both achieving 80 % accuracy. Precision was not incidental - it was engineered.
 
@@ -35,9 +38,6 @@ Restructured mobile-number generation logic, reducing dependence on purely stoch
 
 ### Virtual Library System - UPY Backend *(2024)*
 Designed and deployed an internal library platform for university personnel, automating resource management through a structured MySQL data layer. Query performance was optimized to sustain reliable institutional use over time.
-
-### Collections Strategy Automation - Macropay *(2025)*
-Monitored KPIs across a customer-service center via CCC and Power BI. Automated critical back-office processes with Python, measurably reducing execution time. Managed data ingestion from Amazon S3 and refined collections strategy through Excel pivot-table analysis.
 
 ---
 

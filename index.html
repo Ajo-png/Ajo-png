@@ -1,90 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hageo Balam Java Full Stack & Data Engineer</title>
-
+    <title>Hageo Balam - Java Full Stack &amp; Data Engineer</title>
     <meta name="theme-color" content="#0A0A0F">
-    <meta name="description" content="Portfolio Hageo Juda Balam Mendez. Java Full Stack Developer & Data Engineer based in Mérida, Yucatán.">
-
+    <meta name="description" content="Portfolio - Hageo Juda Balam Mendez. Java Full Stack Developer &amp; Data Engineer based in Mérida, Yucatán.">
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- =====================
-         SITE HEADER / HERO
-    ===================== -->
     <header class="hero">
         <div class="hero__noise"></div>
 
         <nav class="nav">
             <span class="nav__brand">HB</span>
             <ul class="nav__links">
-                <li><a class="nav__link" href="#about">About</a></li>
-                <li><a class="nav__link" href="#skills">Skills</a></li>
-                <li><a class="nav__link" href="#projects">Projects</a></li>
-                <li><a class="nav__link" href="#contact">Contact</a></li>
+                <li><a class="nav__link" href="#about"    data-en="About"    data-es="Sobre mí">About</a></li>
+                <li><a class="nav__link" href="#skills"   data-en="Skills"   data-es="Habilidades">Skills</a></li>
+                <li><a class="nav__link" href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+                <li><a class="nav__link" href="#contact"  data-en="Contact"  data-es="Contacto">Contact</a></li>
             </ul>
         </nav>
 
         <div class="hero__body">
-            <p class="hero__eyebrow">Java Full Stack Jr. · Data Engineer</p>
+            <p class="hero__eyebrow"
+               data-en="Java Full Stack · Data Engineer"
+               data-es="Desarrollador Java Full Stack · Ingeniero de Datos">Java Full Stack · Data Engineer</p>
+
             <h1 class="hero__title">Hageo<br><em>Balam</em></h1>
-            <p class="hero__tagline">
+
+            <div class="hero__controls" role="group" aria-label="Site controls">
+
+                <div class="toggle toggle--theme" role="group" aria-label="Color theme">
+                    <button class="toggle__btn toggle__btn--active" id="btn-dark"  aria-pressed="true"  onclick="setTheme('dark')">
+                        <span class="toggle__icon" aria-hidden="true">◐</span>
+                        <span class="toggle__label" data-en="Dark"  data-es="Oscuro">Dark</span>
+                    </button>
+                    <button class="toggle__btn" id="btn-light" aria-pressed="false" onclick="setTheme('light')">
+                        <span class="toggle__icon" aria-hidden="true">○</span>
+                        <span class="toggle__label" data-en="Light" data-es="Claro">Light</span>
+                    </button>
+                </div>
+
+                <div class="toggle toggle--lang" role="group" aria-label="Language">
+                    <button class="toggle__btn toggle__btn--active" id="btn-en" aria-pressed="true"  onclick="setLang('en')">
+                        <span class="toggle__label">EN</span>
+                    </button>
+                    <button class="toggle__btn" id="btn-es" aria-pressed="false" onclick="setLang('es')">
+                        <span class="toggle__label">ES</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <p class="hero__tagline"
+               data-en="Software developer and data engineer devoted to open-source tooling, automation, and systems that are as legible as they are efficient."
+               data-es="Desarrollador de software e ingeniero de datos, enfocado en herramientas de código abierto, automatización y sistemas tan legibles como eficientes.">
                 Software developer and data engineer devoted to open-source tooling,
                 automation, and systems that are as legible as they are efficient.
             </p>
+
             <div class="hero__cta">
-                <a class="btn btn--primary" href="#projects">View Projects</a>
-                <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+                <a class="btn btn--primary" href="#projects" data-en="View Projects" data-es="Ver Proyectos">View Projects</a>
+                <a class="btn btn--ghost"   href="#contact"  data-en="Get in Touch"  data-es="Contáctame">Get in Touch</a>
             </div>
         </div>
 
-        <div class="hero__scroll-indicator" aria-hidden="true">
-            <span></span>
-        </div>
+        <div class="hero__scroll-indicator" aria-hidden="true"><span></span></div>
     </header>
 
 
     <main class="main">
 
-        <!-- =====================
-             ABOUT
-        ===================== -->
         <section class="section" id="about">
             <div class="section__inner section__inner--split">
 
                 <div class="about__label section__label">
-                    <span>01 Profile</span>
+                    <span data-en="01 - Profile" data-es="01 - Perfil">01 - Profile</span>
                 </div>
 
                 <div class="about__content">
-                    <h2 class="section__heading">Who I Am</h2>
-                    <p class="about__body">
+                    <h2 class="section__heading" data-en="Who I Am" data-es="Quién Soy">Who I Am</h2>
+                    <p class="about__body"
+                       data-en="Based in Mérida, Yucatán, and open to relocation, I am a software developer and data engineer with a disciplined orientation toward open-source solutions. My work spans backend development, data-pipeline construction, and machine-learning application - pursued with continuous learning as an operating principle rather than a destination."
+                       data-es="Con base en Mérida, Yucatán, y disponible para reubicación, soy desarrollador de software e ingeniero de datos con una orientación disciplinada hacia soluciones de código abierto. Mi trabajo abarca desarrollo backend, construcción de pipelines de datos y aplicación de machine learning, con el aprendizaje continuo como principio operativo.">
                         Based in Mérida, Yucatán, and open to relocation, I am a software
                         developer and data engineer with a disciplined orientation toward
                         open-source solutions. My work spans backend development, data-pipeline
-                        construction, and machine-learning application pursued with continuous
+                        construction, and machine-learning application - pursued with continuous
                         learning as an operating principle rather than a destination.
                     </p>
                     <ul class="about__meta">
                         <li class="about__meta-item">
-                            <span class="about__meta-key">Location</span>
+                            <span class="about__meta-key" data-en="Location"  data-es="Ubicación">Location</span>
                             <span class="about__meta-val">Mérida, Yucatán · MX</span>
                         </li>
                         <li class="about__meta-item">
-                            <span class="about__meta-key">Languages</span>
-                            <span class="about__meta-val">Spanish (Native) · English (C1)</span>
+                            <span class="about__meta-key" data-en="Languages" data-es="Idiomas">Languages</span>
+                            <span class="about__meta-val" data-en="Spanish (Native) · English (C1)" data-es="Español (Nativo) · Inglés (C1)">Spanish (Native) · English (C1)</span>
                         </li>
                         <li class="about__meta-item">
-                            <span class="about__meta-key">Education</span>
-                            <span class="about__meta-val">Data Engineering UPY · Java Bootcamp Generation MX</span>
+                            <span class="about__meta-key" data-en="Education" data-es="Educación">Education</span>
+                            <span class="about__meta-val" data-en="Data Engineering - UPY · Java Bootcamp - Generation MX" data-es="Ingeniería en Datos - UPY · Bootcamp Java - Generation MX">Data Engineering - UPY · Java Bootcamp - Generation MX</span>
                         </li>
                     </ul>
                 </div>
@@ -93,19 +114,16 @@
         </section>
 
 
-        <!-- =====================
-             SKILLS
-        ===================== -->
         <section class="section section--dark" id="skills">
             <div class="section__inner">
 
-                <div class="section__label"><span>02 Arsenal</span></div>
-                <h2 class="section__heading">Technical Skills</h2>
+                <div class="section__label"><span data-en="02 - Arsenal" data-es="02 - Arsenal">02 - Arsenal</span></div>
+                <h2 class="section__heading" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
 
                 <div class="skills">
 
                     <div class="skill-group">
-                        <h3 class="skill-group__title">Languages</h3>
+                        <h3 class="skill-group__title" data-en="Languages" data-es="Lenguajes">Languages</h3>
                         <ul class="skill-group__list">
                             <li class="skill-group__item">Java</li>
                             <li class="skill-group__item">Python</li>
@@ -124,7 +142,7 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3 class="skill-group__title">Data & Cloud</h3>
+                        <h3 class="skill-group__title" data-en="Data &amp; Cloud" data-es="Datos y Nube">Data &amp; Cloud</h3>
                         <ul class="skill-group__list">
                             <li class="skill-group__item">Amazon S3</li>
                             <li class="skill-group__item">AWS Pipelines</li>
@@ -136,7 +154,7 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3 class="skill-group__title">ML & Libraries</h3>
+                        <h3 class="skill-group__title" data-en="ML &amp; Libraries" data-es="ML y Librerías">ML &amp; Libraries</h3>
                         <ul class="skill-group__list">
                             <li class="skill-group__item">Random Forest</li>
                             <li class="skill-group__item">Madgwick Filter</li>
@@ -145,7 +163,7 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3 class="skill-group__title">Tooling</h3>
+                        <h3 class="skill-group__title" data-en="Tooling" data-es="Herramientas">Tooling</h3>
                         <ul class="skill-group__list">
                             <li class="skill-group__item">Git</li>
                             <li class="skill-group__item">CCC</li>
@@ -153,12 +171,12 @@
                     </div>
 
                     <div class="skill-group">
-                        <h3 class="skill-group__title">Soft Skills</h3>
+                        <h3 class="skill-group__title" data-en="Soft Skills" data-es="Habilidades Blandas">Soft Skills</h3>
                         <ul class="skill-group__list">
-                            <li class="skill-group__item">Detail-oriented</li>
-                            <li class="skill-group__item">Analytical thinking</li>
-                            <li class="skill-group__item">Autonomy & initiative</li>
-                            <li class="skill-group__item">Continuous learning</li>
+                            <li class="skill-group__item" data-en="Detail-oriented"          data-es="Orientación al detalle">Detail-oriented</li>
+                            <li class="skill-group__item" data-en="Analytical thinking"      data-es="Pensamiento analítico">Analytical thinking</li>
+                            <li class="skill-group__item" data-en="Autonomy &amp; initiative" data-es="Autonomía e iniciativa">Autonomy &amp; initiative</li>
+                            <li class="skill-group__item" data-en="Continuous learning"      data-es="Aprendizaje continuo">Continuous learning</li>
                         </ul>
                     </div>
 
@@ -168,34 +186,34 @@
         </section>
 
 
-        <!-- =====================
-             PROJECTS
-        ===================== -->
         <section class="section" id="projects">
             <div class="section__inner">
 
-                <div class="section__label"><span>03 Operations</span></div>
-                <h2 class="section__heading">Projects</h2>
+                <div class="section__label"><span data-en="03 - Operations" data-es="03 - Operaciones">03 - Operations</span></div>
+                <h2 class="section__heading" data-en="Projects" data-es="Proyectos">Projects</h2>
 
                 <div class="projects">
 
-                    <!-- Project 1 -->
                     <article class="card">
                         <div class="card__accent"></div>
                         <header class="card__header">
                             <span class="card__index">01</span>
-                            <h3 class="card__title">IMU Motion Analysis Canine Movement</h3>
+                            <h3 class="card__title"
+                                data-en="IMU Motion Analysis - Canine Movement"
+                                data-es="Análisis de Movimiento IMU - Movimiento Canino">IMU Motion Analysis - Canine Movement</h3>
                             <p class="card__period">Feb 2025 – Apr 2025</p>
                         </header>
-                        <p class="card__description">
+                        <p class="card__description"
+                           data-en="Applied sensor-calibration algorithms that improved extracted data precision by 20%. Implemented the Madgwick filter for orientation estimation, achieving 80% accuracy in movement classification. Activity states were subsequently classified via Random Forest at equivalent accuracy."
+                           data-es="Apliqué algoritmos de calibración de sensores que mejoraron la precisión de datos en un 20%. Implementé el filtro Madgwick para estimación de orientación, logrando un 80% de precisión. Los estados de actividad fueron clasificados mediante Random Forest con precisión equivalente.">
                             Applied sensor-calibration algorithms that improved extracted data
                             precision by 20%. Implemented the Madgwick filter for orientation
-                            estimation, achieving 80 % accuracy in movement classification.
+                            estimation, achieving 80% accuracy in movement classification.
                             Activity states were subsequently classified via Random Forest at
                             equivalent accuracy.
                         </p>
                         <details class="card__details">
-                            <summary class="card__summary">Stack</summary>
+                            <summary class="card__summary" data-en="Stack" data-es="Stack">Stack</summary>
                             <ul class="card__stack">
                                 <li>Python</li>
                                 <li>Madgwick Filter</li>
@@ -205,22 +223,25 @@
                         </details>
                     </article>
 
-                    <!-- Project 2 -->
                     <article class="card">
                         <div class="card__accent"></div>
                         <header class="card__header">
                             <span class="card__index">02</span>
-                            <h3 class="card__title">HERMIN Phone-Number Generation Optimization</h3>
+                            <h3 class="card__title"
+                                data-en="HERMIN - Phone-Number Generation Optimization"
+                                data-es="HERMIN - Optimización de Generación de Números Telefónicos">HERMIN - Phone-Number Generation Optimization</h3>
                             <p class="card__period">Feb 2024 – Apr 2024</p>
                         </header>
-                        <p class="card__description">
-                            Optimized mobile-number generation efficiency by 50 %, reducing
+                        <p class="card__description"
+                           data-en="Optimized mobile-number generation efficiency by 50%, reducing dependence on purely random generation. Integrated FireDucks alongside Matplotlib for high-volume data visualization, enabling coherent analysis of large datasets within constrained processing environments."
+                           data-es="Optimicé la generación de números de teléfono en un 50%, reduciendo la dependencia en generación aleatoria. Integré FireDucks con Matplotlib para visualización de grandes volúmenes de datos en entornos de procesamiento limitados.">
+                            Optimized mobile-number generation efficiency by 50%, reducing
                             dependence on purely random generation. Integrated FireDucks alongside
                             Matplotlib for high-volume data visualization, enabling coherent
                             analysis of large datasets within constrained processing environments.
                         </p>
                         <details class="card__details">
-                            <summary class="card__summary">Stack</summary>
+                            <summary class="card__summary" data-en="Stack" data-es="Stack">Stack</summary>
                             <ul class="card__stack">
                                 <li>Python</li>
                                 <li>FireDucks</li>
@@ -229,39 +250,45 @@
                         </details>
                     </article>
 
-                    <!-- Project 3 -->
                     <article class="card">
                         <div class="card__accent"></div>
                         <header class="card__header">
                             <span class="card__index">03</span>
-                            <h3 class="card__title">Virtual Library System UPY Backend</h3>
+                            <h3 class="card__title"
+                                data-en="Virtual Library System - UPY Backend"
+                                data-es="Sistema de Biblioteca Virtual - Backend UPY">Virtual Library System - UPY Backend</h3>
                             <p class="card__period">Feb 2024 – Apr 2024</p>
                         </header>
-                        <p class="card__description">
+                        <p class="card__description"
+                           data-en="Designed and deployed a virtual library platform for internal university personnel, automating resource management and improving accessibility. Structured and optimized query performance via MySQL, establishing a reliable data layer for sustained institutional use."
+                           data-es="Diseñé y desplegué una plataforma de biblioteca virtual para personal universitario interno, automatizando la gestión de recursos. Estructuré y optimicé consultas con MySQL para establecer una capa de datos confiable de uso institucional sostenido.">
                             Designed and deployed a virtual library platform for internal
                             university personnel, automating resource management and improving
                             accessibility. Structured and optimized query performance via MySQL,
                             establishing a reliable data layer for sustained institutional use.
                         </p>
                         <details class="card__details">
-                            <summary class="card__summary">Stack</summary>
+                            <summary class="card__summary" data-en="Stack" data-es="Stack">Stack</summary>
                             <ul class="card__stack">
                                 <li>Java</li>
                                 <li>MySQL</li>
-                                <li>Backend Architecture</li>
+                                <li data-en="Backend Architecture" data-es="Arquitectura Backend">Backend Architecture</li>
                             </ul>
                         </details>
                     </article>
 
-                    <!-- Project 4 Work experience as project-grade entry -->
                     <article class="card card--highlight">
                         <div class="card__accent"></div>
                         <header class="card__header">
                             <span class="card__index">04</span>
-                            <h3 class="card__title">Collections Strategy Automation Macropay</h3>
+                            <h3 class="card__title"
+                                data-en="Collections Strategy Automation - Macropay"
+                                data-es="Automatización de Estrategia de Cobranza - Macropay">Collections Strategy Automation - Macropay</h3>
                             <p class="card__period">Apr 2025</p>
                         </header>
-                        <p class="card__description">
+                        <p class="card__description"
+                           data-en="Monitored KPIs across a customer-service center via CCC and Power BI. Automated repetitive back-office processes with Python, reducing execution time on critical tasks. Parsed and analyzed databases through Excel pivot tables to sharpen collections strategy, alongside managing data ingestion from Amazon S3."
+                           data-es="Monitoree indicadores clave de rendimiento en un centro de atención al cliente mediante CCC y Power BI. Automaticé procesos de back office con Python. Depuré y analicé bases de datos con tablas dinámicas de Excel, gestionando la ingesta de datos desde Amazon S3.">
                             Monitored KPIs across a customer-service center via CCC and Power BI.
                             Automated repetitive back-office processes with Python, reducing
                             execution time on critical tasks. Parsed and analyzed databases
@@ -269,7 +296,7 @@
                             managing data ingestion from Amazon S3.
                         </p>
                         <details class="card__details">
-                            <summary class="card__summary">Stack</summary>
+                            <summary class="card__summary" data-en="Stack" data-es="Stack">Stack</summary>
                             <ul class="card__stack">
                                 <li>Python</li>
                                 <li>Power BI</li>
@@ -286,31 +313,28 @@
         </section>
 
 
-        <!-- =====================
-             CERTIFICATIONS
-        ===================== -->
         <section class="section section--dark" id="certifications">
             <div class="section__inner">
 
-                <div class="section__label"><span>04 Credentials</span></div>
-                <h2 class="section__heading">Certifications & Training</h2>
+                <div class="section__label"><span data-en="04 - Credentials" data-es="04 - Credenciales">04 - Credentials</span></div>
+                <h2 class="section__heading" data-en="Certifications &amp; Training" data-es="Certificaciones y Formación">Certifications &amp; Training</h2>
 
                 <ol class="cert-list">
                     <li class="cert-list__item">
                         <span class="cert-list__title">Cloud Data Pipeline Builder</span>
-                        <span class="cert-list__issuer">Amazon Web Services 2024</span>
+                        <span class="cert-list__issuer">Amazon Web Services - 2024</span>
                     </li>
                     <li class="cert-list__item">
                         <span class="cert-list__title">Data Engineering</span>
-                        <span class="cert-list__issuer">Amazon Web Services 2024</span>
+                        <span class="cert-list__issuer">Amazon Web Services - 2024</span>
                     </li>
                     <li class="cert-list__item">
                         <span class="cert-list__title">English Language Enhancement</span>
-                        <span class="cert-list__issuer">International College of Manitoba 2024</span>
+                        <span class="cert-list__issuer">International College of Manitoba - 2024</span>
                     </li>
                     <li class="cert-list__item">
                         <span class="cert-list__title">Bootcamp Java Full Stack Jr.</span>
-                        <span class="cert-list__issuer">Generation México Dec 2025 · Mar 2026</span>
+                        <span class="cert-list__issuer">Generation México - Dec 2025 · Mar 2026</span>
                     </li>
                 </ol>
 
@@ -318,41 +342,31 @@
         </section>
 
 
-        <!-- =====================
-             CONTACT
-        ===================== -->
         <section class="section" id="contact">
             <div class="section__inner section__inner--center">
 
-                <div class="section__label"><span>05 Contact</span></div>
-                <h2 class="section__heading">Let's Work Together</h2>
-                <p class="contact__sub">
+                <div class="section__label"><span data-en="05 - Contact" data-es="05 - Contacto">05 - Contact</span></div>
+                <h2 class="section__heading" data-en="Let's Work Together" data-es="Trabajemos Juntos">Let's Work Together</h2>
+                <p class="contact__sub"
+                   data-en="Open to full-stack or data-engineering roles. Available for relocation. Reach me through any of the following channels."
+                   data-es="Disponible para roles de desarrollo full-stack o ingeniería de datos. Abierto a reubicación. Contáctame a través de cualquiera de los siguientes canales.">
                     Open to full-stack or data-engineering roles. Available for relocation.
                     Reach me through any of the following channels.
                 </p>
 
                 <div class="contact__links">
-                    <a class="contact__link"
-                       href="mailto:hageo.balam21@gmail.com"
-                       aria-label="Email Hageo">
+
+                    <a class="contact__link" href="mailto:hageo.balam21@gmail.com" aria-label="Email Hageo">
                         <span class="contact__link-label">Email</span>
                         <span class="contact__link-value">hageo.balam21@gmail.com</span>
                     </a>
 
-                    <a class="contact__link"
-                       href="https://www.linkedin.com/in/hageobalam/"
-                       target="_blank"
-                       rel="noreferrer"
-                       aria-label="LinkedIn profile">
+                    <a class="contact__link" href="https://www.linkedin.com/in/hageobalam/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
                         <span class="contact__link-label">LinkedIn</span>
                         <span class="contact__link-value">Hageo Balam</span>
                     </a>
 
-                    <a class="contact__link"
-                       href="https://github.com/Ajo-png"
-                       target="_blank"
-                       rel="noreferrer"
-                       aria-label="GitHub profile">
+                    <a class="contact__link" href="https://github.com/Ajo-png" target="_blank" rel="noreferrer" aria-label="GitHub profile">
                         <span class="contact__link-label">GitHub</span>
                         <span class="contact__link-value">Ajo-png</span>
                     </a>
@@ -365,13 +379,14 @@
     </main>
 
 
-    <!-- =====================
-         SITE FOOTER
-    ===================== -->
     <footer class="footer">
         <p class="footer__copy">© 2026 Hageo Juda Balam Mendez</p>
-        <p class="footer__note">Built with intent no frameworks required.</p>
+        <p class="footer__note"
+           data-en="Built with intent - no frameworks required."
+           data-es="Construido con intención - sin frameworks.">Built with intent</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
