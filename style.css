@@ -183,10 +183,6 @@ textarea:not([rows]) {
     color: var(--color-silver-300);
 }
 
-[data-theme="light"] .hero__scroll-indicator span {
-    background: linear-gradient(to bottom, var(--color-silver-200), transparent);
-}
-
 [data-theme="light"] .section--dark {
     background: var(--color-silver-300);
 }
@@ -475,21 +471,8 @@ a {
     margin-top: var(--space-sm);
 }
 
-.hero__scroll-indicator {
-    position: absolute;
-    bottom: var(--space-md);
-    left: 50%;
-    translate: -50% 0;
-}
 
-.hero__scroll-indicator span {
-    display: block;
-    width: 1px;
-    height: 60px;
-    background: linear-gradient(to bottom, var(--accent-primary), transparent);
-    margin: auto;
-    transition: background 0.3s ease;
-}
+
 
 .hero__controls {
     display: flex;
