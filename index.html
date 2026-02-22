@@ -3,97 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Hageo</title>
+    <title>Hageo Balam Java Full Stack & Data Engineer</title>
 
-    <meta name="theme-color" content="red">
+    <meta name="theme-color" content="#0A0A0F">
+    <meta name="description" content="Portfolio Hageo Juda Balam Mendez. Java Full Stack Developer & Data Engineer based in Mérida, Yucatán.">
 
-    <meta name="description" content="Portfolio Hageo - Data Engineer & Java Fullstack">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" 
-    href="https://fonts.gstatic.com" 
-    crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 </head>
 <body>
-    <h1 class="desire-title">Hageo</h1>
 
-    <main>
-        <section>
-            <header>Intro a mi perfil profesional</header>
-            <nav>
-                <a href="#Skills">Skills</a>
-                <a href="#Projects">Proyectos</a>
-            </nav>
-        </section>
+    <!-- =====================
+         SITE HEADER / HERO
+    ===================== -->
+    <header class="hero">
+        <div class="hero__noise"></div>
+
+        <nav class="nav">
+            <span class="nav__brand">HB</span>
+            <ul class="nav__links">
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#skills">Skills</a></li>
+                <li><a class="nav__link" href="#projects">Projects</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero__body">
+            <p class="hero__eyebrow">Java Full Stack Jr. · Data Engineer</p>
+            <h1 class="hero__title">Hageo<br><em>Balam</em></h1>
+            <p class="hero__tagline">
+                Software developer and data engineer devoted to open-source tooling,
+                automation, and systems that are as legible as they are efficient.
+            </p>
+            <div class="hero__cta">
+                <a class="btn btn--primary" href="#projects">View Projects</a>
+                <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+            </div>
+        </div>
+
+        <div class="hero__scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </header>
 
 
-        <section id="Skills">
-            <header>Skills</header>
-            
-        </section>
+    <main class="main">
 
-        <section id="Projects">
-            <header><h2>Proyectos</h2></header>
-            <article>
-                <header>Titulo Proyecto 1</header>
-                <p>Description Proyecto 1</p>
-                <details>
-                    <summary>Stack Tecnologico 1</summary>
-                    <ul>
-                        <li>Tecnologia 1</li>
-                        <li>Tecnologia 2</li>
-                        <li>Tecnologia 3</li>
+        <!-- =====================
+             ABOUT
+        ===================== -->
+        <section class="section" id="about">
+            <div class="section__inner section__inner--split">
+
+                <div class="about__label section__label">
+                    <span>01 Profile</span>
+                </div>
+
+                <div class="about__content">
+                    <h2 class="section__heading">Who I Am</h2>
+                    <p class="about__body">
+                        Based in Mérida, Yucatán, and open to relocation, I am a software
+                        developer and data engineer with a disciplined orientation toward
+                        open-source solutions. My work spans backend development, data-pipeline
+                        construction, and machine-learning application pursued with continuous
+                        learning as an operating principle rather than a destination.
+                    </p>
+                    <ul class="about__meta">
+                        <li class="about__meta-item">
+                            <span class="about__meta-key">Location</span>
+                            <span class="about__meta-val">Mérida, Yucatán · MX</span>
+                        </li>
+                        <li class="about__meta-item">
+                            <span class="about__meta-key">Languages</span>
+                            <span class="about__meta-val">Spanish (Native) · English (C1)</span>
+                        </li>
+                        <li class="about__meta-item">
+                            <span class="about__meta-key">Education</span>
+                            <span class="about__meta-val">Data Engineering UPY · Java Bootcamp Generation MX</span>
+                        </li>
                     </ul>
-                </details>
-            </article>
-<br>
-            <article>
-                <header>Titulo Proyecto 2</header>
-                <p>Description Proyecto 2</p>
-                <details>
-                    <summary>Stack Tecnologico 2</summary>
-                    <ul>
-                        <li>Tecnologia 1</li>
-                        <li>Tecnologia 2</li>
-                        <li>Tecnologia 3</li>
-                    </ul>
-                </details>
-            </article>
-<br>
-            <article>
-                <header>Titulo Proyecto 3</header>
-                <p>Description Proyecto 3</p>
-                <details>
-                    <summary>Stack Tecnologico 3</summary>
-                    <ul>
-                        <li>Tecnologia 1</li>
-                        <li>Tecnologia 2</li>
-                        <li>Tecnologia 3</li>
-                    </ul>
-                </details>
-            </article>
+                </div>
+
+            </div>
         </section>
-<br>
-        <section>
-            <header>Contacto</header>
-            <nav>
-                <a  target="_blank" 
-                href="https://www.linkedin.com/in/hageobalam/"
-                rel="noreferrer"
-                >LinkedIn</a>
 
-                <a  target="_blank" 
-                href="https://github.com/Ajo-png"
-                rel="noreferrer"
-                >Github</a>
 
-                <p>-- Formulario de contacto</p>
+        <!-- =====================
+             SKILLS
+        ===================== -->
+        <section class="section section--dark" id="skills">
+            <div class="section__inner">
 
-            </nav>
+                <div class="section__label"><span>02 Arsenal</span></div>
+                <h2 class="section__heading">Technical Skills</h2>
+
+                <div class="skills">
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Languages</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">Java</li>
+                            <li class="skill-group__item">Python</li>
+                            <li class="skill-group__item">JavaScript</li>
+                            <li class="skill-group__item">C</li>
+                            <li class="skill-group__item">SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Frontend</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">HTML</li>
+                            <li class="skill-group__item">CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Data & Cloud</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">Amazon S3</li>
+                            <li class="skill-group__item">AWS Pipelines</li>
+                            <li class="skill-group__item">Power BI</li>
+                            <li class="skill-group__item">Excel · Pivot Tables</li>
+                            <li class="skill-group__item">MySQL</li>
+                            <li class="skill-group__item">FireDucks</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">ML & Libraries</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">Random Forest</li>
+                            <li class="skill-group__item">Madgwick Filter</li>
+                            <li class="skill-group__item">Matplotlib</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Tooling</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">Git</li>
+                            <li class="skill-group__item">CCC</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Soft Skills</h3>
+                        <ul class="skill-group__list">
+                            <li class="skill-group__item">Detail-oriented</li>
+                            <li class="skill-group__item">Analytical thinking</li>
+                            <li class="skill-group__item">Autonomy & initiative</li>
+                            <li class="skill-group__item">Continuous learning</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
         </section>
+
+
+        <!-- =====================
+             PROJECTS
+        ===================== -->
+        <section class="section" id="projects">
+            <div class="section__inner">
+
+                <div class="section__label"><span>03 Operations</span></div>
+                <h2 class="section__heading">Projects</h2>
+
+                <div class="projects">
+
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <div class="card__accent"></div>
+                        <header class="card__header">
+                            <span class="card__index">01</span>
+                            <h3 class="card__title">IMU Motion Analysis Canine Movement</h3>
+                            <p class="card__period">Feb 2025 – Apr 2025</p>
+                        </header>
+                        <p class="card__description">
+                            Applied sensor-calibration algorithms that improved extracted data
+                            precision by 20%. Implemented the Madgwick filter for orientation
+                            estimation, achieving 80 % accuracy in movement classification.
+                            Activity states were subsequently classified via Random Forest at
+                            equivalent accuracy.
+                        </p>
+                        <details class="card__details">
+                            <summary class="card__summary">Stack</summary>
+                            <ul class="card__stack">
+                                <li>Python</li>
+                                <li>Madgwick Filter</li>
+                                <li>Random Forest</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card">
+                        <div class="card__accent"></div>
+                        <header class="card__header">
+                            <span class="card__index">02</span>
+                            <h3 class="card__title">HERMIN Phone-Number Generation Optimization</h3>
+                            <p class="card__period">Feb 2024 – Apr 2024</p>
+                        </header>
+                        <p class="card__description">
+                            Optimized mobile-number generation efficiency by 50 %, reducing
+                            dependence on purely random generation. Integrated FireDucks alongside
+                            Matplotlib for high-volume data visualization, enabling coherent
+                            analysis of large datasets within constrained processing environments.
+                        </p>
+                        <details class="card__details">
+                            <summary class="card__summary">Stack</summary>
+                            <ul class="card__stack">
+                                <li>Python</li>
+                                <li>FireDucks</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card">
+                        <div class="card__accent"></div>
+                        <header class="card__header">
+                            <span class="card__index">03</span>
+                            <h3 class="card__title">Virtual Library System UPY Backend</h3>
+                            <p class="card__period">Feb 2024 – Apr 2024</p>
+                        </header>
+                        <p class="card__description">
+                            Designed and deployed a virtual library platform for internal
+                            university personnel, automating resource management and improving
+                            accessibility. Structured and optimized query performance via MySQL,
+                            establishing a reliable data layer for sustained institutional use.
+                        </p>
+                        <details class="card__details">
+                            <summary class="card__summary">Stack</summary>
+                            <ul class="card__stack">
+                                <li>Java</li>
+                                <li>MySQL</li>
+                                <li>Backend Architecture</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                    <!-- Project 4 Work experience as project-grade entry -->
+                    <article class="card card--highlight">
+                        <div class="card__accent"></div>
+                        <header class="card__header">
+                            <span class="card__index">04</span>
+                            <h3 class="card__title">Collections Strategy Automation Macropay</h3>
+                            <p class="card__period">Apr 2025</p>
+                        </header>
+                        <p class="card__description">
+                            Monitored KPIs across a customer-service center via CCC and Power BI.
+                            Automated repetitive back-office processes with Python, reducing
+                            execution time on critical tasks. Parsed and analyzed databases
+                            through Excel pivot tables to sharpen collections strategy, alongside
+                            managing data ingestion from Amazon S3.
+                        </p>
+                        <details class="card__details">
+                            <summary class="card__summary">Stack</summary>
+                            <ul class="card__stack">
+                                <li>Python</li>
+                                <li>Power BI</li>
+                                <li>Amazon S3</li>
+                                <li>Excel</li>
+                                <li>CCC</li>
+                            </ul>
+                        </details>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================
+             CERTIFICATIONS
+        ===================== -->
+        <section class="section section--dark" id="certifications">
+            <div class="section__inner">
+
+                <div class="section__label"><span>04 Credentials</span></div>
+                <h2 class="section__heading">Certifications & Training</h2>
+
+                <ol class="cert-list">
+                    <li class="cert-list__item">
+                        <span class="cert-list__title">Cloud Data Pipeline Builder</span>
+                        <span class="cert-list__issuer">Amazon Web Services 2024</span>
+                    </li>
+                    <li class="cert-list__item">
+                        <span class="cert-list__title">Data Engineering</span>
+                        <span class="cert-list__issuer">Amazon Web Services 2024</span>
+                    </li>
+                    <li class="cert-list__item">
+                        <span class="cert-list__title">English Language Enhancement</span>
+                        <span class="cert-list__issuer">International College of Manitoba 2024</span>
+                    </li>
+                    <li class="cert-list__item">
+                        <span class="cert-list__title">Bootcamp Java Full Stack Jr.</span>
+                        <span class="cert-list__issuer">Generation México Dec 2025 · Mar 2026</span>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!-- =====================
+             CONTACT
+        ===================== -->
+        <section class="section" id="contact">
+            <div class="section__inner section__inner--center">
+
+                <div class="section__label"><span>05 Contact</span></div>
+                <h2 class="section__heading">Let's Work Together</h2>
+                <p class="contact__sub">
+                    Open to full-stack or data-engineering roles. Available for relocation.
+                    Reach me through any of the following channels.
+                </p>
+
+                <div class="contact__links">
+                    <a class="contact__link"
+                       href="mailto:hageo.balam21@gmail.com"
+                       aria-label="Email Hageo">
+                        <span class="contact__link-label">Email</span>
+                        <span class="contact__link-value">hageo.balam21@gmail.com</span>
+                    </a>
+
+                    <a class="contact__link"
+                       href="https://www.linkedin.com/in/hageobalam/"
+                       target="_blank"
+                       rel="noreferrer"
+                       aria-label="LinkedIn profile">
+                        <span class="contact__link-label">LinkedIn</span>
+                        <span class="contact__link-value">Hageo Balam</span>
+                    </a>
+
+                    <a class="contact__link"
+                       href="https://github.com/Ajo-png"
+                       target="_blank"
+                       rel="noreferrer"
+                       aria-label="GitHub profile">
+                        <span class="contact__link-label">GitHub</span>
+                        <span class="contact__link-value">Ajo-png</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+
+    <!-- =====================
+         SITE FOOTER
+    ===================== -->
+    <footer class="footer">
+        <p class="footer__copy">© 2026 Hageo Juda Balam Mendez</p>
+        <p class="footer__note">Built with intent no frameworks required.</p>
+    </footer>
+
 </body>
 </html>
